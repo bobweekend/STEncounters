@@ -14,7 +14,7 @@ public abstract class Incantation
     protected castZone zone;
     protected ArrayList<Incantation> requires;
     protected ArrayList<Incantation> discard;
-
+    protected int chips;
     public sphere getSpellSphere()
     {
         return spellSphere;

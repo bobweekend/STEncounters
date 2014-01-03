@@ -3,5 +3,13 @@
  */
 public class TransmuteIncantation extends Incantation
 {
-
+    private Incantation target;
+    public void setTarget(Incantation target)
+    {
+        this.target = target;
+    }
+    public  boolean checkDiscardCondition()
+    {
+        return target.checkDiscardCondition();
+    }
 }

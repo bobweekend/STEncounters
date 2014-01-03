@@ -3,5 +3,8 @@
  */
 public class AttackIncantation extends Incantation
 {
-
+    public  boolean checkDiscardCondition()
+    {
+        return (chips == 0);
+    }
 }
