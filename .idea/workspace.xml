@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54071ef8-375a-4241-a4c0-3195ddfd72b2" name="Default" comment="Incantations from FCN&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/bobweekend.xml" />
+    <list default="true" id="54071ef8-375a-4241-a4c0-3195ddfd72b2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Aspect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Cardname.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IncantationDO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NameValue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RitualPaths.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Incantation.java" afterPath="$PROJECT_DIR$/src/Incantation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IncantationBaseDO.java" afterPath="$PROJECT_DIR$/src/IncantationBaseDO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IncantationFactory.java" afterPath="$PROJECT_DIR$/src/IncantationFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IncantationRitDO.java" afterPath="$PROJECT_DIR$/src/IncantationRitDO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestDriver.java" afterPath="$PROJECT_DIR$/src/TestDriver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="STEncounters.iws" />
@@ -75,7 +75,7 @@
       <file leaf-file-name="Cardname.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cardname.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="18" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+            <state line="23" column="18" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
@@ -84,24 +84,17 @@
       <file leaf-file-name="IncantationRitDO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IncantationRitDO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="34" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding>
-                <element signature="e#204#205#0" expanded="true" />
-                <element signature="e#243#244#0" expanded="true" />
-                <element signature="e#300#301#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-              </folding>
+            <state line="19" column="34" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="510">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="5" selection-start="1248" selection-end="1248" vertical-scroll-proportion="-1.7944444" vertical-offset="1632" max-vertical-offset="2550">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="53" column="5" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="2856">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,11 +102,8 @@
       <file leaf-file-name="IncantationDO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IncantationDO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="5" selection-start="295" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-              <folding>
-                <element signature="e#167#168#0" expanded="true" />
-                <element signature="e#197#198#0" expanded="true" />
-              </folding>
+            <state line="20" column="5" selection-start="295" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="476">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,24 +112,7 @@
         <entry file="file://$PROJECT_DIR$/src/RitualPaths.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="49" column="18" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="1139">
-              <folding>
-                <element signature="e#198#199#0" expanded="true" />
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#304#305#0" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#630#631#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,30 +120,17 @@
       <file leaf-file-name="NameValue.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NameValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="18" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="24" column="18" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Aspect.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Aspect.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Aspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="18" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="748">
-              <folding>
-                <element signature="e#144#145#0" expanded="true" />
-                <element signature="e#168#169#0" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#228#229#0" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#276#277#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#359#360#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-              </folding>
+            <state line="7" column="27" selection-start="143" selection-end="143" vertical-scroll-proportion="0.14354645" vertical-offset="0" max-vertical-offset="829">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -178,7 +138,7 @@
       <file leaf-file-name="IncantationBaseDO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IncantationBaseDO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="18" selection-start="4649" selection-end="4649" vertical-scroll-proportion="0.0" vertical-offset="1163" max-vertical-offset="1938">
+            <state line="171" column="18" selection-start="4649" selection-end="4649" vertical-scroll-proportion="0.0" vertical-offset="2907" max-vertical-offset="3502">
               <folding />
             </state>
           </provider>
@@ -188,10 +148,7 @@
         <entry file="file://$PROJECT_DIR$/src/IncantationFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="40" column="35" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="2091">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -199,11 +156,8 @@
       <file leaf-file-name="Incantation.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Incantation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-              <folding>
-                <element signature="e#1084#1085#0" expanded="true" />
-                <element signature="e#1111#1112#0" expanded="true" />
-              </folding>
+            <state line="56" column="13" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1411">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -245,15 +199,15 @@
         <option value="$PROJECT_DIR$/src/Rit.java" />
         <option value="$PROJECT_DIR$/src/Encounter.java" />
         <option value="$PROJECT_DIR$/src/TestDriver.java" />
-        <option value="$PROJECT_DIR$/src/Incantation.java" />
         <option value="$PROJECT_DIR$/src/IncantationBaseDO.java" />
         <option value="$PROJECT_DIR$/src/IncantationDO.java" />
         <option value="$PROJECT_DIR$/src/IncantationRitDO.java" />
         <option value="$PROJECT_DIR$/src/IncantationFactory.java" />
-        <option value="$PROJECT_DIR$/src/Aspect.java" />
         <option value="$PROJECT_DIR$/src/Cardname.java" />
         <option value="$PROJECT_DIR$/src/RitualPaths.java" />
         <option value="$PROJECT_DIR$/src/NameValue.java" />
+        <option value="$PROJECT_DIR$/src/Incantation.java" />
+        <option value="$PROJECT_DIR$/src/Aspect.java" />
       </list>
     </option>
   </component>
@@ -427,6 +381,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -452,19 +419,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -568,7 +522,11 @@
       <created>1388801853087</created>
       <updated>1388801853087</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Incantations from FCN&#10;">
+      <created>1388805269341</created>
+      <updated>1388805269341</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -585,19 +543,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32990867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.029612755" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.029612755" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -615,7 +573,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Incantations from FCN" />
-    <option name="LAST_COMMIT_MESSAGE" value="Incantations from FCN" />
+    <MESSAGE value="Incantations from FCN&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Incantations from FCN&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -625,6 +584,76 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Cardname.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IncantationRitDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="34" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="5" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="2856">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IncantationDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="5" selection-start="295" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RitualPaths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="18" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NameValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="18" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="27" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IncantationBaseDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="18" selection-start="4649" selection-end="4649" vertical-scroll-proportion="0.0" vertical-offset="2907" max-vertical-offset="3502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IncantationFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="35" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="2091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Incantation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="13" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AbjurationIncantation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="5" selection-start="103" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="391">
@@ -767,46 +796,7 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_IncantationDO.zip/com/domain/project/IncantationDO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_IncantationDO(1).zip/com/domain/project/Desc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_IncantationDO(2).zip/com/domain/project/RitualPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_IncantationDO(1).zip/com/domain/project/IncantationDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="23" selection-start="707" selection-end="718" vertical-scroll-proportion="0.72407407" vertical-offset="51" max-vertical-offset="1462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_IncantationDO(1).zip/com/domain/project/RitualPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding>
-            <element signature="e#150#151#0" expanded="false" />
-            <element signature="e#173#174#0" expanded="false" />
-            <element signature="e#206#207#0" expanded="false" />
-            <element signature="e#229#230#0" expanded="false" />
-            <element signature="e#254#255#0" expanded="false" />
-            <element signature="e#277#278#0" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#333#334#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AbjurationIncantation.java">
@@ -820,110 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="5" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_IncantationDO(2).zip/com/domain/project/IncantationDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="36" selection-start="698" selection-end="731" vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="1462">
-          <folding>
-            <element signature="e#845#846#0" expanded="false" />
-            <element signature="e#870#871#0" expanded="false" />
-            <element signature="e#909#910#0" expanded="false" />
-            <element signature="e#936#937#0" expanded="false" />
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#990#991#0" expanded="false" />
-            <element signature="e#1029#1030#0" expanded="false" />
-            <element signature="e#1056#1057#0" expanded="false" />
-            <element signature="e#1089#1090#0" expanded="false" />
-            <element signature="e#1120#1121#0" expanded="false" />
-            <element signature="e#1169#1170#0" expanded="false" />
-            <element signature="e#1208#1209#0" expanded="false" />
-            <element signature="e#1241#1242#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-            <element signature="e#1317#1318#0" expanded="false" />
-            <element signature="e#1352#1353#0" expanded="false" />
-            <element signature="e#1387#1388#0" expanded="false" />
-            <element signature="e#1418#1419#0" expanded="false" />
-            <element signature="e#1469#1470#0" expanded="false" />
-            <element signature="e#1508#1509#0" expanded="false" />
-            <element signature="e#1542#1543#0" expanded="false" />
-            <element signature="e#1572#1573#0" expanded="false" />
-            <element signature="e#1621#1622#0" expanded="false" />
-            <element signature="e#1658#1659#0" expanded="false" />
-            <element signature="e#1691#1692#0" expanded="false" />
-            <element signature="e#1718#1719#0" expanded="false" />
-            <element signature="e#1763#1764#0" expanded="false" />
-            <element signature="e#1794#1795#0" expanded="false" />
-            <element signature="e#1829#1830#0" expanded="false" />
-            <element signature="e#1860#1861#0" expanded="false" />
-            <element signature="e#1911#1912#0" expanded="false" />
-            <element signature="e#1950#1951#0" expanded="false" />
-            <element signature="e#1985#1986#0" expanded="false" />
-            <element signature="e#2016#2017#0" expanded="false" />
-            <element signature="e#2067#2068#0" expanded="false" />
-            <element signature="e#2106#2107#0" expanded="false" />
-            <element signature="e#2139#2140#0" expanded="false" />
-            <element signature="e#2168#2169#0" expanded="false" />
-            <element signature="e#2215#2216#0" expanded="false" />
-            <element signature="e#2250#2251#0" expanded="false" />
-            <element signature="e#2283#2284#0" expanded="false" />
-            <element signature="e#2314#2315#0" expanded="false" />
-            <element signature="e#2363#2364#0" expanded="false" />
-            <element signature="e#2402#2403#0" expanded="false" />
-            <element signature="e#2432#2433#0" expanded="false" />
-            <element signature="e#2458#2459#0" expanded="false" />
-            <element signature="e#2499#2500#0" expanded="false" />
-            <element signature="e#2528#2529#0" expanded="false" />
-            <element signature="e#2562#2563#0" expanded="false" />
-            <element signature="e#2592#2593#0" expanded="false" />
-            <element signature="e#2641#2642#0" expanded="false" />
-            <element signature="e#2678#2679#0" expanded="false" />
-            <element signature="e#2712#2713#0" expanded="false" />
-            <element signature="e#2742#2743#0" expanded="false" />
-            <element signature="e#2791#2792#0" expanded="false" />
-            <element signature="e#2828#2829#0" expanded="false" />
-            <element signature="e#2861#2862#0" expanded="false" />
-            <element signature="e#2890#2891#0" expanded="false" />
-            <element signature="e#2937#2938#0" expanded="false" />
-            <element signature="e#2972#2973#0" expanded="false" />
-            <element signature="e#3007#3008#0" expanded="false" />
-            <element signature="e#3038#3039#0" expanded="false" />
-            <element signature="e#3089#3090#0" expanded="false" />
-            <element signature="e#3128#3129#0" expanded="false" />
-            <element signature="e#3158#3159#0" expanded="false" />
-            <element signature="e#3184#3185#0" expanded="false" />
-            <element signature="e#3225#3226#0" expanded="false" />
-            <element signature="e#3254#3255#0" expanded="false" />
-            <element signature="e#3283#3284#0" expanded="false" />
-            <element signature="e#3308#3309#0" expanded="false" />
-            <element signature="e#3347#3348#0" expanded="false" />
-            <element signature="e#3374#3375#0" expanded="false" />
-            <element signature="e#3404#3405#0" expanded="false" />
-            <element signature="e#3430#3431#0" expanded="false" />
-            <element signature="e#3471#3472#0" expanded="false" />
-            <element signature="e#3500#3501#0" expanded="false" />
-            <element signature="e#3536#3537#0" expanded="false" />
-            <element signature="e#3568#3569#0" expanded="false" />
-            <element signature="e#3621#3622#0" expanded="false" />
-            <element signature="e#3662#3663#0" expanded="false" />
-            <element signature="e#3701#3702#0" expanded="false" />
-            <element signature="e#3731#3732#0" expanded="false" />
-            <element signature="e#3785#3786#0" expanded="false" />
-            <element signature="e#3822#3823#0" expanded="false" />
-            <element signature="e#3850#3851#0" expanded="false" />
-            <element signature="e#3874#3875#0" expanded="false" />
-            <element signature="e#3911#3912#0" expanded="false" />
-            <element signature="e#3936#3937#0" expanded="false" />
-            <element signature="e#3969#3970#0" expanded="false" />
-            <element signature="e#3998#3999#0" expanded="false" />
-            <element signature="e#4045#4046#0" expanded="false" />
-            <element signature="e#4080#4081#0" expanded="false" />
-            <element signature="e#4110#4111#0" expanded="false" />
-            <element signature="e#4136#4137#0" expanded="false" />
-            <element signature="e#4177#4178#0" expanded="false" />
-            <element signature="e#4206#4207#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -941,42 +827,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Incantation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <folding>
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IncantationBaseDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="18" selection-start="4649" selection-end="4649" vertical-scroll-proportion="0.0" vertical-offset="1163" max-vertical-offset="1938">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IncantationRitDO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="34" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IncantationFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="35" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="2091">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -985,26 +846,6 @@
         <state line="25" column="27" selection-start="700" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="663">
           <folding>
             <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="18" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="748">
-          <folding>
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1019,34 +860,14 @@
     <entry file="file://$PROJECT_DIR$/src/IncantationDO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="5" selection-start="295" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <folding>
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RitualPaths.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="18" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="1139">
-          <folding>
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,10 +880,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="5" selection-start="1248" selection-end="1248" vertical-scroll-proportion="-1.7944444" vertical-offset="1632" max-vertical-offset="2550">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="53" column="5" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Incantation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="13" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IncantationBaseDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="18" selection-start="4649" selection-end="4649" vertical-scroll-proportion="0.0" vertical-offset="1163" max-vertical-offset="1938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="27" selection-start="143" selection-end="143" vertical-scroll-proportion="0.14354645" vertical-offset="0" max-vertical-offset="829">
+          <folding />
         </state>
       </provider>
     </entry>

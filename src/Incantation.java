@@ -13,12 +13,16 @@ public abstract class Incantation
     protected int fluency;
     protected String castPhrase;
     protected castZone zone;
-    protected ArrayList<Incantation> requires;
-    protected ArrayList<Incantation> discard;
+    protected ArrayList<Incantation> activateRequires;
+    protected ArrayList<Incantation> activateDiscard;
+    protected ArrayList<Incantation> sustainRequires;
+    protected ArrayList<Incantation> sustainDiscard;
+    protected boolean requiresFocus;
     protected int chips;
     protected int harmonyCost;
     protected int resonanceCost;
     protected  targets targ;
+
     public sphere getSpellSphere()
     {
         return spellSphere;
@@ -53,17 +57,21 @@ public abstract class Incantation
     @Override
     public String toString()
     {
-        return ""+ this.getClass() +"{" +
+        return "Incantation{" +
                 "spellSphere=" + spellSphere +
                 ", title='" + title + '\'' +
                 ", fluency=" + fluency +
                 ", castPhrase='" + castPhrase + '\'' +
                 ", zone=" + zone +
-                ", requires=" + requires +
-                ", discard=" + discard +
+                ", activateRequires=" + activateRequires +
+                ", activateDiscard=" + activateDiscard +
+                ", sustainRequires=" + sustainRequires +
+                ", sustainDiscard=" + sustainDiscard +
+                ", requiresFocus=" + requiresFocus +
                 ", chips=" + chips +
                 ", harmonyCost=" + harmonyCost +
                 ", resonanceCost=" + resonanceCost +
+                ", targ=" + targ +
                 '}';
     }
 }
