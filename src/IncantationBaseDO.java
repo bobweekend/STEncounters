@@ -167,4 +167,34 @@ public class IncantationBaseDO
     public void setUpgrade(String upgrade){
         this.upgrade = upgrade;
     }
+
+    @Override
+    public String toString()
+    {
+        return "IncantationBaseDO{" +
+                "artist='" + artist + '\'' +
+                ", aspect=" + aspect +
+                ", assistantdev=" + assistantdev +
+                ", backflavor='" + backflavor + '\'' +
+                ", broadcastbar='" + broadcastbar + '\'' +
+                ", cardcreator='" + cardcreator + '\'' +
+                ", cardname=" + cardname +
+                ", castphraseEN='" + castphraseEN + '\'' +
+                ", castphraseST='" + castphraseST + '\'' +
+                ", coreeffect='" + coreeffect + '\'' +
+                ", empowerments=" + empowerments +
+                ", fluency='" + fluency + '\'' +
+                ", frontflavor='" + frontflavor + '\'' +
+                ", harmonyCost='" + harmonyCost + '\'' +
+                ", internalid='" + internalid + '\'' +
+                ", needHandsign='" + needHandsign + '\'' +
+                ", printid='" + printid + '\'' +
+                ", rarity='" + rarity + '\'' +
+                ", require='" + require + '\'' +
+                ", resonanceCost='" + resonanceCost + '\'' +
+                ", rules='" + rules + '\'' +
+                ", spherename='" + spherename + '\'' +
+                ", upgrade='" + upgrade + '\'' +
+                '}';
+    }
 }

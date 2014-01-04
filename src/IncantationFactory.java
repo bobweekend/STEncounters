@@ -38,6 +38,7 @@ public class IncantationFactory
             source = gson.fromJson(IOUtils.toString(new URL(url)), IncantationRitDO.class);
         }
 
+        System.out.println(source);
         if (source.getCoreeffect().equals("Attack"))
         {
             ret = new AttackIncantation();
@@ -107,10 +108,6 @@ public class IncantationFactory
         System.out.println("Class =" + ret.getClass());
         System.out.println("zone =" + ret.getZone());
         System.out.println(""+ ret.toString());
-
-
-//boring part of copying the DO to the actual object.
-
 
         // parse the rules and build the card list
         // do a bunch of crap here...

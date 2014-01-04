@@ -7,6 +7,7 @@ public abstract class Incantation
 {
     public enum sphere {SOUL, MIND, QUANTUM, BIO, FORCES, MATTER};
     public enum castZone {ATTACK, DEFENSE, ENHANCEMENT,CURSE};
+    public enum targets {SINGLE, AREA, GLOBAL};
     protected sphere spellSphere;
     protected  String title;
     protected int fluency;
@@ -17,6 +18,7 @@ public abstract class Incantation
     protected int chips;
     protected int harmonyCost;
     protected int resonanceCost;
+    protected  targets targ;
     public sphere getSpellSphere()
     {
         return spellSphere;
@@ -43,6 +45,10 @@ public abstract class Incantation
     }
 
     public abstract boolean checkDiscardCondition();
+    public targets getTargets()
+    {
+        return targ;
+    }
 
     @Override
     public String toString()

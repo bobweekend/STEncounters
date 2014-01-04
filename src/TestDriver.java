@@ -1,6 +1,7 @@
 /**
  * Created by bobweekend on 12/28/13.
  */
+import java.util.Date;
 public class TestDriver {
     public static void main(String[] args)
     {
@@ -10,6 +11,8 @@ public class TestDriver {
         try
         {
         Incantation I;
+            Date d = new Date();
+            System.out.println(d.toString());
             for(int j = 1;j<600;j++)
             {
               I = incantFact.getIncantation(j);
@@ -19,6 +22,8 @@ public class TestDriver {
                     break;
                 }
             }
+            d = new Date();
+            System.out.println(d.toString());
         }
         catch (Exception e)
         {

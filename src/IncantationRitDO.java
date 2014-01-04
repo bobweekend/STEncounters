@@ -14,4 +14,11 @@ public class IncantationRitDO extends  IncantationBaseDO
         this.ritualPaths = ritualPaths;
     }
 
+    @Override
+    public String toString()
+    {
+        return super.toString() + "IncantationRitDO{" +
+                "ritualPaths=" + ritualPaths +
+                '}';
+    }
 }
