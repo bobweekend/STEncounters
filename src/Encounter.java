@@ -5,22 +5,22 @@ import java.util.ArrayList;
  */
 public abstract class Encounter extends Player
 {
-    public enum chipColor {RED,YELLOW,BLACK};
+    public enum chipColor {RED,YELLOW,BLACK, GREEN};
+    protected ArrayList<chipColor> bag;
+    private ArrayList<Player> attackers;
     public void Encounter()
     {
-
+        bag = new ArrayList<chipColor>();
+        attackers = new ArrayList<Player>();
     }
-
-    protected ArrayList<chipColor> chip;
 
     public chipColor draw()
     {
-        // pick a random chip from the bag removing it from the list.
+        // pick a random chip from the bag removing it from the bag. Removing it in the process
         return chipColor.RED;
     }
 
-    public abstract void reload();
+    public abstract void reload(); // Checks to see if reload is needed than reloads.
 
     public abstract int target();
-
 }

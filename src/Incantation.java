@@ -15,6 +15,8 @@ public abstract class Incantation
     protected ArrayList<Incantation> requires;
     protected ArrayList<Incantation> discard;
     protected int chips;
+    protected int harmonyCost;
+    protected int resonanceCost;
     public sphere getSpellSphere()
     {
         return spellSphere;
@@ -42,4 +44,20 @@ public abstract class Incantation
 
     public abstract boolean checkDiscardCondition();
 
+    @Override
+    public String toString()
+    {
+        return ""+ this.getClass() +"{" +
+                "spellSphere=" + spellSphere +
+                ", title='" + title + '\'' +
+                ", fluency=" + fluency +
+                ", castPhrase='" + castPhrase + '\'' +
+                ", zone=" + zone +
+                ", requires=" + requires +
+                ", discard=" + discard +
+                ", chips=" + chips +
+                ", harmonyCost=" + harmonyCost +
+                ", resonanceCost=" + resonanceCost +
+                '}';
+    }
 }
