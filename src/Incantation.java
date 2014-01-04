@@ -5,7 +5,7 @@ import java.util.ArrayList;
  */
 public abstract class Incantation
 {
-    public enum sphere {SOUL, MIND, QUANTUM, BIO, FORCES, MATTER};
+    public enum sphere {SOUL, MIND, QUANTUM, BIO, FORCES, MATTER,META};
     public enum castZone {ATTACK, DEFENSE, ENHANCEMENT,CURSE};
     public enum targets {SINGLE, AREA, GLOBAL};
     protected sphere spellSphere;
@@ -73,5 +73,75 @@ public abstract class Incantation
                 ", resonanceCost=" + resonanceCost +
                 ", targ=" + targ +
                 '}';
+    }
+
+    public void setSpellSphere(sphere spellSphere)
+    {
+        this.spellSphere = spellSphere;
+    }
+
+    public void setTitle(String title)
+    {
+        this.title = title;
+    }
+
+    public void setFluency(int fluency)
+    {
+        this.fluency = fluency;
+    }
+
+    public void setCastPhrase(String castPhrase)
+    {
+        this.castPhrase = castPhrase;
+    }
+
+    public void setZone(castZone zone)
+    {
+        this.zone = zone;
+    }
+
+    public void setActivateRequires(ArrayList<Incantation> activateRequires)
+    {
+        this.activateRequires = activateRequires;
+    }
+
+    public void setActivateDiscard(ArrayList<Incantation> activateDiscard)
+    {
+        this.activateDiscard = activateDiscard;
+    }
+
+    public void setSustainRequires(ArrayList<Incantation> sustainRequires)
+    {
+        this.sustainRequires = sustainRequires;
+    }
+
+    public void setSustainDiscard(ArrayList<Incantation> sustainDiscard)
+    {
+        this.sustainDiscard = sustainDiscard;
+    }
+
+    public void setRequiresFocus(boolean requiresFocus)
+    {
+        this.requiresFocus = requiresFocus;
+    }
+
+    public void setChips(int chips)
+    {
+        this.chips = chips;
+    }
+
+    public void setHarmonyCost(int harmonyCost)
+    {
+        this.harmonyCost = harmonyCost;
+    }
+
+    public void setResonanceCost(int resonanceCost)
+    {
+        this.resonanceCost = resonanceCost;
+    }
+
+    public void setTarg(targets targ)
+    {
+        this.targ = targ;
     }
 }

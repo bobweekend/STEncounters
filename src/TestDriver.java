@@ -8,10 +8,11 @@ public class TestDriver {
         Player p;
         p = new Player("Bob");
         IncantationFactory incantFact = new IncantationFactory();
+        Date d = new Date();
         try
         {
         Incantation I;
-            Date d = new Date();
+
             System.out.println(d.toString());
             for(int j = 1;j<600;j++)
             {
@@ -29,5 +30,7 @@ public class TestDriver {
         {
             System.out.println(e.getMessage());
         }
+        d = new Date();
+        System.out.println(d.toString());
     }
 }

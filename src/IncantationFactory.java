@@ -7,11 +7,12 @@ import java.net.URL;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-
+import java.util.ListIterator;
 import org.apache.commons.io.IOUtils;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
+
 
 public class IncantationFactory
 {
@@ -111,7 +112,273 @@ public class IncantationFactory
 
         // parse the rules and build the card list
         // do a bunch of crap here...
-
+/*
+*  activateRequires;
+   activateDiscard;
+   sustainRequires;
+   sustainDiscard;
+ */
         return ret;
+    }
+
+    private void parseAspect(IncantationBaseDO spell, Incantation incant)
+    {
+       if(spell.getAspect()!= null )
+       {
+           if(spell.getAspect().getBoost() != null)
+           {
+               NameValue boost;
+               ListIterator<NameValue> list = spell.getAspect().getBoost().listIterator();
+               while(list.hasNext())
+               {
+                   boost = list.next();
+//Big if elseif ...
+                  if(boost.getName().equals("Adamant"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Area"))
+                  {
+                     if (boost.getValue().equals("G"))
+                      {
+                         incant.setTarg(Incantation.targets.GLOBAL);
+                      }
+                      else
+                      {
+                          incant.setTarg(Incantation.targets.AREA);
+                      }
+                  }
+                  else if(boost.getName().equals("Backlash"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Bonded"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Brittle"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Charge"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Cloaked"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Curse"))
+                   {
+
+                   }
+                   else if(boost.getName().equals("Curse Duration"))
+                   {
+                       incant.setChips(Integer.valueOf(boost.getValue()).intValue());
+                   }
+                  else if(boost.getName().equals("Dampen Harmony"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Dampen Resonance"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Discord"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Dispel"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Disrupt"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Dmg"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Durability"))
+                  {
+                      incant.setChips(Integer.valueOf(boost.getValue()).intValue());
+                  }
+                  else if(boost.getName().equals("Duration"))
+                  {
+                      incant.setChips(Integer.valueOf(boost.getValue()).intValue());
+
+                  }
+                  else if(boost.getName().equals("Eloquent"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Essence Infusion"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Evade"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Exclusive"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Free Action"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Harmony Dmg"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Harmony Infusion"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Harmony Siphon"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Impenetrable"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Inexorable"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Infuse Rift"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Injunction"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Legendary"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Obliteration"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Pierce"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Quickcast"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Refined"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Requires"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Resilient"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Resonance Dmg"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Resonance Infusion"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Resonance Siphon"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Response"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Sealed"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Shape-Shift"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Shatter"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Shed Discord"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Shield"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Siphon"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Spell Loss"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Subtle"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Unblockable"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Unique to Bearer"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Unique to Caster"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Unique to Codex"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Veiled"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Ward"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Will Dmg"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Will Infusion"))
+                  {
+
+                  }
+                  else if(boost.getName().equals("Will Siphon"))
+                  {
+
+                  }
+               }
+           }
+       }
+    }
+    private void parseRequire(IncantationBaseDO spell)
+    {
+
+    }
+    private void parseRules(IncantationBaseDO spell)
+    {
+
     }
 }

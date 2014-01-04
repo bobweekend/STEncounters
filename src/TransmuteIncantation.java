@@ -8,8 +8,13 @@ public class TransmuteIncantation extends Incantation
     {
         this.target = target;
     }
+
     public  boolean checkDiscardCondition()
     {
         return target.checkDiscardCondition();
+    }
+    public castZone getZone()
+    {
+        return target.zone;
     }
 }

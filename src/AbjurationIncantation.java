@@ -14,4 +14,9 @@ public class AbjurationIncantation extends Incantation
     {
        return target.checkDiscardCondition();
     }
+
+    public castZone getZone()
+    {
+        return target.zone;
+    }
 }
