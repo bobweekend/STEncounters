@@ -4,9 +4,7 @@
 import java.io.IOException;
 import java.net.URL;
 
-import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ListIterator;
 import org.apache.commons.io.IOUtils;
 
@@ -24,20 +22,14 @@ public class IncantationFactory
     public Incantation getIncantation(int cardNumber) throws JsonSyntaxException, MalformedURLException, IOException
     {
         Incantation ret = null;
-        IncantationBaseDO source;
+        IncantationDO source;
         //make call to http://www.becomemagi.com/arcanum/getCard.php?p=[cardnumber]
         // depending on the type create a new one of that type from the supplied jason.
 
         String url = "http://www.becomemagi.com/arcanum/getCard.php?p="+cardNumber;
         Gson gson = new Gson();
-        try
-        {
+
            source = gson.fromJson(IOUtils.toString(new URL(url)), IncantationDO.class);
-        }
-        catch (Exception e)
-        {
-            source = gson.fromJson(IOUtils.toString(new URL(url)), IncantationRitDO.class);
-        }
 
         System.out.println(source);
         if (source.getCoreeffect().equals("Attack"))
@@ -121,7 +113,7 @@ public class IncantationFactory
         return ret;
     }
 
-    private void parseAspect(IncantationBaseDO spell, Incantation incant)
+    private void parseAspect(IncantationDO spell, Incantation incant)
     {
        if(spell.getAspect()!= null )
        {
@@ -373,11 +365,11 @@ public class IncantationFactory
            }
        }
     }
-    private void parseRequire(IncantationBaseDO spell)
+    private void parseRequire(IncantationDO spell)
     {
 
     }
-    private void parseRules(IncantationBaseDO spell)
+    private void parseRules(IncantationDO spell)
     {
 
     }
