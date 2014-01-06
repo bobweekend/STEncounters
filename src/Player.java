@@ -159,4 +159,42 @@ public class Player {
     {
         essence-=amt;
     }
+
+    public void performMaintenance()
+    {
+        // check your zones in order and resolve effects
+        //Attack Zone
+        //Defense Zone
+        // Enhance Zone
+}
+
+    // Negative values indicate non-card actions.
+    // -1 = exchange will for resonance
+    // -2 = exchange will for harmony
+    // -3 = exchange will for essence
+    // -4 = meditate
+    // -5 = miscast
+    public int performAction(int cardNumber)
+    {
+        int actionsUsed = 0; // 0 indicates a free action
+
+        return actionsUsed;
+    }
+
+    public int performResponseAction(int cardNumber)
+    {
+        int actionsUsed = 0; // 0 indicates a free action
+
+
+        return actionsUsed;
+    }
+    public void upgradeIncantation(Incantation card, ArrayList<String> cost)
+    {
+        // figure out later
+    }
+
+    public void upgradeRitual(Incantation card, ArrayList<String> cost)
+    {
+        // figure out later
+    }
 }

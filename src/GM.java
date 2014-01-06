@@ -7,6 +7,8 @@ import java.util.ArrayList;
 public class GM
 {
     private ArrayList<Player> playerList;
+    private int currentPlayer;
+    private int round;
     public int resonanceRoll()
     {
         int d10a;
@@ -45,8 +47,25 @@ public class GM
 
     public Player whosTurn()
     {
-        Player p = playerList.get(0);
+        Player p = playerList.get(currentPlayer);
         return p;
+    }
+
+    public void calcualteInititive()
+    {
+        // sort the list descending order harmony >resonance>essence
+        currentPlayer = 0;
+    }
+
+    public int nextPlayer()
+    {
+        currentPlayer ++;
+        if (currentPlayer > playerList.size())
+        {
+          currentPlayer = -1;
+            // signal end of round.
+        }
+        return currentPlayer;
     }
 
 }
