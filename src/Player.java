@@ -99,9 +99,9 @@ public class Player {
         int d10b;
         int total;
         double tmp =java.lang.Math.random()* 10.0;
-        d10a = (int) tmp;
+        d10a = (int) tmp + 1;
         tmp =java.lang.Math.random()* 10.0;
-        d10b =(int) tmp;
+        d10b =(int) tmp +1;
         total = d10a+d10b;
         if(harmony==  -7 || harmony ==-17)
         {
