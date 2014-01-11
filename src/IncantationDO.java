@@ -1,34 +1,73 @@
+import com.j256.ormlite.dao.ForeignCollection;
+import com.j256.ormlite.table.DatabaseTable;
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.field.ForeignCollectionField;
+
+import java.util.Collection;
 import java.util.List;
 
 /**
  * Created by bobweekend on 1/3/14.
  */
+@DatabaseTable(tableName = "incantation")
 public class IncantationDO
 {
-    private String artist;
-    private Aspect aspect;
-    private List<String> assistantdev;
-    private String backflavor;
-    private String broadcastbar;
-    private String cardcreator;
-    private Cardname cardname;
-    private String castphraseEN;
-    private String castphraseST;
-    private String coreeffect;
-    private List<NameValue> empowerments;
-    private String fluency;
-    private String frontflavor;
-    private String harmonyCost;
-    private String internalid;
-    private String needHandsign;
+    public void IncantationDO()
+    {
+
+    }
+
+    @DatabaseField(id = true)
     private String printid;
+    @DatabaseField(useGetSet = true)
+    private String artist;
+    @DatabaseField(useGetSet = true)
+    private String backflavor;
+    @DatabaseField(useGetSet = true)
+    private String broadcastbar;
+    @DatabaseField(useGetSet = true)
+    private String cardcreator;
+    @DatabaseField(useGetSet = true)
+    private String castphraseEN;
+    @DatabaseField(useGetSet = true)
+    private String castphraseST;
+    @DatabaseField(useGetSet = true)
+    private String coreeffect;
+    @DatabaseField(useGetSet = true)
+    private String fluency;
+    @DatabaseField(useGetSet = true)
+    private String frontflavor;
+    @DatabaseField(useGetSet = true)
+    private String harmonyCost;
+    @DatabaseField(useGetSet = true)
+    private String internalid;
+    @DatabaseField(useGetSet = true)
+    private String needHandsign;
+    @DatabaseField(useGetSet = true)
     private String rarity;
+    @DatabaseField(useGetSet = true)
     private String require;
+    @DatabaseField(useGetSet = true)
     private String resonanceCost;
+    @DatabaseField(useGetSet = true)
     private String rules;
+    @DatabaseField(useGetSet = true)
     private String spherename;
+    @DatabaseField(useGetSet = true)
     private String upgrade;
+
+    @DatabaseField(useGetSet = true, foreign = true )
+    private Aspect aspect;
+    @DatabaseField(useGetSet = true, foreign = true )
+    private Cardname cardname;
+    @DatabaseField(useGetSet = true, foreign = true )
     private RitualPaths ritualPaths;
+
+    @ForeignCollectionField(eager = false)
+    private Collection<String> assistantdev;
+
+    @ForeignCollectionField(eager = false)
+    private Collection<NameValue> empowerments;
 
     public RitualPaths getRitualPaths(){
         return this.ritualPaths;
@@ -49,7 +88,7 @@ public class IncantationDO
     public void setAspect(Aspect aspect){
         this.aspect = aspect;
     }
-    public List<String> getAssistantdev(){
+    public Collection<String> getAssistantdev(){
         return this.assistantdev;
     }
     public void setAssistantdev(List<String> assistantdev){
@@ -97,7 +136,7 @@ public class IncantationDO
     public void setCoreeffect(String coreeffect){
         this.coreeffect = coreeffect;
     }
-    public List<NameValue> getEmpowerments(){
+    public Collection<NameValue> getEmpowerments(){
         return this.empowerments;
     }
     public void setEmpowerments(List<NameValue> empowerments){

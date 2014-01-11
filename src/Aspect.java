@@ -1,25 +1,38 @@
+import com.j256.ormlite.field.ForeignCollectionField;
+import com.j256.ormlite.table.DatabaseTable;
+import com.j256.ormlite.field.DatabaseField;
 
-
+import java.util.Collection;
 import java.util.List;
+@DatabaseTable(tableName ="aspect")
+   public class Aspect{
 
-public class Aspect{
-   	private List<NameValue> boost;
-   	private List<NameValue> desc;
-   	private List<NameValue> effect;
+    public Aspect()
+    {
+    }
 
- 	public List getBoost(){
+    @DatabaseField(generatedId = true)
+    private int id;
+    @ForeignCollectionField(eager = false)
+    private Collection<NameValue> boost;
+    @ForeignCollectionField(eager = false)
+    private Collection<NameValue> desc;
+    @ForeignCollectionField(eager = false)
+    private Collection<NameValue> effect;
+
+ 	public Collection getBoost(){
 		return this.boost;
 	}
 	public void setBoost(List boost){
 		this.boost = boost;
 	}
- 	public List getDesc(){
+ 	public Collection getDesc(){
 		return this.desc;
 	}
 	public void setDesc(List desc){
 		this.desc = desc;
 	}
- 	public List getEffect(){
+ 	public Collection getEffect(){
 		return this.effect;
 	}
 	public void setEffect(List effect){

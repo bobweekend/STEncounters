@@ -1,13 +1,22 @@
-
+import com.j256.ormlite.table.DatabaseTable;
+import com.j256.ormlite.field.DatabaseField;
 
 
 import java.util.List;
-
-class Cardname{
+@DatabaseTable(tableName ="cardname")
+ class Cardname{
+    @DatabaseField(generatedId = true)
+    private int id;
+    @DatabaseField(useGetSet = true)
    	private String format;
+    @DatabaseField(useGetSet = true)
    	private String value;
 
- 	public String getFormat(){
+    Cardname()
+    {
+    }
+
+    public String getFormat(){
 		return this.format;
 	}
 	public void setFormat(String format){
