@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54071ef8-375a-4241-a4c0-3195ddfd72b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IncantationDODB.java" afterPath="$PROJECT_DIR$/src/IncantationDODB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IncantationFactory.java" afterPath="$PROJECT_DIR$/src/IncantationFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestDriver.java" afterPath="$PROJECT_DIR$/src/TestDriver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PlayerComparator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GM.java" afterPath="$PROJECT_DIR$/src/GM.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Player.java" afterPath="$PROJECT_DIR$/src/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="STEncounters.iws" />
@@ -69,90 +69,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IOUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/thirdparty/commons-io-2.4/commons-io-2.4-sources.jar!/org/apache/commons/io/IOUtils.java">
+      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="878" column="0" selection-start="30677" selection-end="30677" vertical-scroll-proportion="0.0" vertical-offset="14005" max-vertical-offset="42857">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Charsets.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/thirdparty/commons-io-2.4/commons-io-2.4-sources.jar!/org/apache/commons/io/Charsets.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="0" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.0" vertical-offset="694" max-vertical-offset="2431">
-              <folding>
-                <element signature="e#0#6201#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StringBuilderWriter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/thirdparty/commons-io-2.4/commons-io-2.4-sources.jar!/org/apache/commons/io/output/StringBuilderWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="0" selection-start="4469" selection-end="4469" vertical-scroll-proportion="0.0" vertical-offset="1975" max-vertical-offset="2516">
-              <folding>
-                <element signature="e#0#4512#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#4268#4269#0" expanded="false" />
-                <element signature="e#4298#4299#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gson.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/thirdparty/google-gson-2.2.4/gson-2.2.4-sources.jar!/com/google/gson/Gson.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="798" column="0" selection-start="34871" selection-end="34871" vertical-scroll-proportion="0.0" vertical-offset="12556" max-vertical-offset="14637">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonReader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/thirdparty/google-gson-2.2.4/gson-2.2.4-sources.jar!/com/google/gson/stream/JsonReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="451" column="0" selection-start="15831" selection-end="15831" vertical-scroll-proportion="0.0" vertical-offset="7184" max-vertical-offset="26214">
-              <folding>
-                <element signature="e#0#48209#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#33150#33182#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IncantationDODB.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IncantationDODB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="5" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="1105">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#764#765#0" expanded="true" />
-                <element signature="e#794#795#0" expanded="true" />
-                <element signature="e#844#845#0" expanded="true" />
-                <element signature="e#882#883#0" expanded="true" />
-                <element signature="e#917#918#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#988#989#0" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IncantationFactory.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/IncantationFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="58" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.18299446" vertical-offset="734" max-vertical-offset="6443">
+            <state line="247" column="0" selection-start="5100" selection-end="5100" vertical-scroll-proportion="0.0" vertical-offset="3214" max-vertical-offset="3893">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -161,38 +81,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonReaderInternalAccess.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/thirdparty/google-gson-2.2.4/gson-2.2.4-sources.jar!/com/google/gson/internal/JsonReaderInternalAccess.java">
+      <file leaf-file-name="Encounter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Encounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-              <folding>
-                <element signature="e#0#1064#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AttackIncantation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AttackIncantation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+            <state line="15" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IncantationDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IncantationDao.java">
+      <file leaf-file-name="Incantation.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Incantation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="5" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="935">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#552#553#0" expanded="true" />
-              </folding>
+            <state line="54" column="5" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1581">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbjurationIncantation.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AbjurationIncantation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="31" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttackIncantation.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AttackIncantation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="1" selection-start="98" selection-end="98" vertical-scroll-proportion="0.12142857" vertical-offset="0" max-vertical-offset="560">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -211,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/AttackIncantation.java" />
         <option value="$PROJECT_DIR$/src/ComponentIncantation.java" />
         <option value="$PROJECT_DIR$/src/DefenseIncantation.java" />
@@ -252,14 +171,17 @@
         <option value="$PROJECT_DIR$/src/TestDriver.java" />
         <option value="$PROJECT_DIR$/src/IncantationDODB.java" />
         <option value="$PROJECT_DIR$/src/IncantationFactory.java" />
+        <option value="$PROJECT_DIR$/src/PlayerComparator.java" />
+        <option value="$PROJECT_DIR$/src/GM.java" />
+        <option value="$PROJECT_DIR$/src/Player.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="469" />
-    <option name="y" value="9" />
+    <option name="y" value="11" />
     <option name="width" value="1214" />
-    <option name="height" value="985" />
+    <option name="height" value="983" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -610,11 +532,15 @@
       <created>1389489166928</created>
       <updated>1389489166928</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adding H2 database for local caching of cards&#10;">
+      <created>1389492167964</created>
+      <updated>1389492167964</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="469" y="9" width="1214" height="985" extended-state="0" />
+    <frame x="469" y="11" width="1214" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -635,7 +561,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2621035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33105803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.331813" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.029612755" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -694,20 +620,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Incantation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="387" max-vertical-offset="2601">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cardname.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="18" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="5" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="2856">
@@ -985,13 +897,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Encounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="1" selection-start="675" selection-end="675" vertical-scroll-proportion="0.787037" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AllyIncantation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="5" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
@@ -999,37 +904,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="2533">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ComponentIncantation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="28" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AbjurationIncantation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Incantation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="431" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AttackIncantation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
           <folding />
         </state>
       </provider>
@@ -1067,49 +944,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/thirdparty/commons-io-2.4/commons-io-2.4-sources.jar!/org/apache/commons/io/output/StringBuilderWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="0" selection-start="4469" selection-end="4469" vertical-scroll-proportion="0.0" vertical-offset="2035" max-vertical-offset="2516">
-          <folding>
-            <element signature="e#0#4512#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#4268#4269#0" expanded="false" />
-            <element signature="e#4298#4299#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/thirdparty/commons-io-2.4/commons-io-2.4-sources.jar!/org/apache/commons/io/IOUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="878" column="0" selection-start="30677" selection-end="30677" vertical-scroll-proportion="0.0" vertical-offset="14005" max-vertical-offset="42857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/thirdparty/google-gson-2.2.4/gson-2.2.4-sources.jar!/com/google/gson/internal/JsonReaderInternalAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
           <folding>
-            <element signature="e#0#1064#0" expanded="false" />
+            <element signature="e#0#97924#0" expanded="false" />
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/thirdparty/google-gson-2.2.4/gson-2.2.4-sources.jar!/com/google/gson/Gson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="798" column="0" selection-start="34871" selection-end="34871" vertical-scroll-proportion="0.0" vertical-offset="12556" max-vertical-offset="14637">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/thirdparty/google-gson-2.2.4/gson-2.2.4-sources.jar!/com/google/gson/stream/JsonReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="451" column="0" selection-start="15831" selection-end="15831" vertical-scroll-proportion="0.0" vertical-offset="7184" max-vertical-offset="26214">
-          <folding>
-            <element signature="e#0#48209#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#33150#33182#0" expanded="false" />
+            <element signature="e#36634#36642#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1224,19 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IncantationDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="935">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RitualPaths.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="33" selection-start="757" selection-end="757" vertical-scroll-proportion="0.3401109" vertical-offset="377" max-vertical-offset="918">
@@ -1251,9 +1079,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/IncantationFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="58" selection-start="1613" selection-end="1613" vertical-scroll-proportion="1.5397413" vertical-offset="0" max-vertical-offset="6443">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/thirdparty/google-gson-2.2.4/gson-2.2.4-sources.jar!/com/google/gson/Gson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="798" column="0" selection-start="34871" selection-end="34871" vertical-scroll-proportion="0.296846" vertical-offset="12556" max-vertical-offset="14637">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/thirdparty/commons-io-2.4/commons-io-2.4-sources.jar!/org/apache/commons/io/output/StringBuilderWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="0" selection-start="4469" selection-end="4469" vertical-scroll-proportion="0.71985155" vertical-offset="1975" max-vertical-offset="2516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/thirdparty/google-gson-2.2.4/gson-2.2.4-sources.jar!/com/google/gson/stream/JsonReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="451" column="0" selection-start="15831" selection-end="15831" vertical-scroll-proportion="0.296846" vertical-offset="7184" max-vertical-offset="26214">
+          <folding>
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12223#12224#0" expanded="true" />
+            <element signature="e#12337#12338#0" expanded="true" />
+            <element signature="e#12361#12362#0" expanded="true" />
+            <element signature="e#47332#48201#0" expanded="true" />
+            <element signature="e#48194#48195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/IncantationDODB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="5" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="1105">
+        <state line="37" column="5" selection-start="727" selection-end="727" vertical-scroll-proportion="0.6357143" vertical-offset="273" max-vertical-offset="1105">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#595#596#0" expanded="true" />
@@ -1272,13 +1138,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IncantationFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/GM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="58" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.18299446" vertical-offset="734" max-vertical-offset="6443">
+        <state line="61" column="27" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.60714287" vertical-offset="663" max-vertical-offset="1309">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PlayerComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="17" selection-start="536" selection-end="536" vertical-scroll-proportion="0.57678574" vertical-offset="0" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/thirdparty/google-gson-2.2.4/gson-2.2.4-sources.jar!/com/google/gson/internal/JsonReaderInternalAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.27321428" vertical-offset="0" max-vertical-offset="560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IncantationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="5" selection-start="841" selection-end="841" vertical-scroll-proportion="0.7285714" vertical-offset="204" max-vertical-offset="935">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Encounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="247" column="0" selection-start="5100" selection-end="5100" vertical-scroll-proportion="0.0" vertical-offset="3214" max-vertical-offset="3893">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Incantation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="5" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbjurationIncantation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="31" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AttackIncantation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="1" selection-start="98" selection-end="98" vertical-scroll-proportion="0.12142857" vertical-offset="0" max-vertical-offset="560">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,10 +1,12 @@
 /**
  * Created by bobweekend on 12/28/13.
  */
+
 import java.lang.Math;
 import java.util.ArrayList;
 
-public class Player {
+public class Player
+{
     private int number;
     private String firstName;
     private int resonance;
@@ -18,31 +20,60 @@ public class Player {
     private ArrayList<Incantation> enhanceZone;
     private ArrayList<Incantation> defenseZone;
     private ArrayList<Incantation> attackZone;
-    public enum energy {RESONANCE,HARMONY,ESSENCE};
-    public int getStandardActions() {
+    private ArrayList<Incantation> curses;
+
+
+    public enum energy
+    {
+        RESONANCE, HARMONY, ESSENCE
+    }
+
+
+    public int getStandardActions()
+    {
         return standardActions;
     }
 
-    public int getFreeActions() {
+    public int getFreeActions()
+    {
         return freeActions;
     }
 
-    public String getFirstName() {
+    public String getFirstName()
+    {
         return firstName;
     }
 
-    public int getInterruptStone() {
+    public int getInterruptStone()
+    {
         return interruptStone;
     }
 
-    public int getWill() {
+    public int getWill()
+    {
         return will;
     }
 
     private int will;
 
-    public int getNumber() {
+    public int getNumber()
+    {
         return number;
+    }
+
+    public int getEssence()
+    {
+        return essence;
+    }
+
+    public int getResonance()
+    {
+        return resonance;
+    }
+
+    public int getHarmony()
+    {
+        return harmony;
     }
 
     protected Player()
@@ -55,20 +86,22 @@ public class Player {
 
     public Player(String fn)
     {
-        firstName=fn;
-        resonance=0;
-        harmony =0;
+        firstName = fn;
+        resonance = 0;
+        harmony = 0;
         essence = 10;
         will = 3;
-        standardActions =2;
+        standardActions = 2;
         freeActions = 1;
     }
 
-    public int getTotalFocus() {
+    public int getTotalFocus()
+    {
         return totalFocus;
     }
 
-    public int getUsedFocus() {
+    public int getUsedFocus()
+    {
         return usedFocus;
     }
 
@@ -76,45 +109,45 @@ public class Player {
     {
         if (will > 0)
         {
-            will --;
+            will--;
             switch (e)
             {
                 case RESONANCE:
                     resonance += 3;
                     break;
                 case HARMONY:
-                    harmony +=2;
+                    harmony += 2;
                     break;
                 case ESSENCE:
-                    essence ++;
+                    essence++;
                     break;
             }
         }
     }
+
     public int harmonyDamage(int amt)
     {
-        harmony-=amt;
+        harmony -= amt;
         int ret = 0;
         int d10a;
         int d10b;
         int total;
-        double tmp =java.lang.Math.random()* 10.0;
+        double tmp = java.lang.Math.random() * 10.0;
         d10a = (int) tmp + 1;
-        tmp =java.lang.Math.random()* 10.0;
-        d10b =(int) tmp +1;
-        total = d10a+d10b;
-        if(harmony==  -7 || harmony ==-17)
+        tmp = java.lang.Math.random() * 10.0;
+        d10b = (int) tmp + 1;
+        total = d10a + d10b;
+        if (harmony == -7 || harmony == -17)
         {
 
-            if(total < Math.abs(harmony))
+            if (total < Math.abs(harmony))
             {
                 //discord event
                 ret = -1;
-                essence -=3;
+                essence -= 3;
             }
 
-        }
-        else if (harmony == 7 || harmony ==17)
+        } else if (harmony == 7 || harmony == 17)
         {
             // harmony event
             ret = 1;
@@ -128,28 +161,27 @@ public class Player {
         int d10a;
         int d10b;
         int total;
-        int ret =0;
-        double tmp =java.lang.Math.random()* 10.0;
+        int ret = 0;
+        double tmp = java.lang.Math.random() * 10.0;
         d10a = (int) tmp;
-        tmp =java.lang.Math.random()* 10.0;
-        d10b =(int) tmp;
-        total = d10a+d10b;
-        if(harmony <= -7)
+        tmp = java.lang.Math.random() * 10.0;
+        d10b = (int) tmp;
+        total = d10a + d10b;
+        if (harmony <= -7)
         {
-            if(total < Math.abs(harmony))
+            if (total < Math.abs(harmony))
             {
-                ret=-1;
-                essence -=3;
+                ret = -1;
+                essence -= 3;
             }
             //discord event
-        }
-        else if (harmony >=7)
+        } else if (harmony >= 7)
         {
             // harmony event
             ret = 1;
-            if(total < harmony)
+            if (total < harmony)
             {
-               resonance +=3;
+                resonance += 3;
             }
         }
         return ret;
@@ -157,7 +189,7 @@ public class Player {
 
     public void essenceDamage(int amt)
     {
-        essence-=amt;
+        essence -= amt;
     }
 
     public void performMaintenance()
@@ -166,7 +198,7 @@ public class Player {
         //Attack Zone
         //Defense Zone
         // Enhance Zone
-}
+    }
 
     // Negative values indicate non-card actions.
     // -1 = exchange will for resonance
@@ -188,6 +220,7 @@ public class Player {
 
         return actionsUsed;
     }
+
     public void upgradeIncantation(Incantation card, ArrayList<String> cost)
     {
         // figure out later
@@ -196,5 +229,28 @@ public class Player {
     public void upgradeRitual(Incantation card, ArrayList<String> cost)
     {
         // figure out later
+    }
+
+    public void addAttack(AttackIncantation attack)
+    {
+        attackZone.add(attack);
+    }
+    public void addDefence(DefenseIncantation defense)
+    {
+        defenseZone.add(defense);
+    }
+    public void addEnhancement(EnhancementIncantation enhancement)
+    {
+        if(enhanceZone.size()<4)
+        {
+            enhanceZone.add(enhancement);
+        }
+
+    }
+
+    public void addCurse(Incantation curse)
+    {
+        //curses are resolved with enhancement. They do not count toward the 4 enhancements allowed.
+        curses.add(curse);
     }
 }

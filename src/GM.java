@@ -3,6 +3,8 @@
  */
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class GM
 {
@@ -29,10 +31,8 @@ public class GM
                 break;
             case 7:
             case 8:
-                resonance = 3;
-                break;
             case 9:
-                resonance = 4;
+                resonance = 3;
                 break;
             case 10:
                 resonance = 5;
@@ -54,6 +54,8 @@ public class GM
     public void calcualteInititive()
     {
         // sort the list descending order harmony >resonance>essence
+        PlayerComparator pc = new PlayerComparator();
+        Collections.sort(playerList,Collections.reverseOrder(pc));
         currentPlayer = 0;
     }
 
