@@ -7,7 +7,7 @@ public class TestDriver {
     {
         Player p;
         p = new Player("Bob");
-        IncantationFactory incantFact = new IncantationFactory();
+        CardFactory incantFact = new CardFactory();
         Date d = new Date();
         try
         {
@@ -21,6 +21,10 @@ public class TestDriver {
                 if(I== null)
                 {
                     break;
+                }
+                else
+                {
+                    System.out.println(I.toString());
                 }
             }
             d = new Date();

@@ -21,7 +21,7 @@ public class Player
     private ArrayList<Incantation> defenseZone;
     private ArrayList<Incantation> attackZone;
     private ArrayList<Incantation> curses;
-
+    private ArrayList<Incantation> codex;
 
     public enum energy
     {

@@ -3,8 +3,21 @@
  */
 public class AllyIncantation extends Incantation
 {
+    private Player npc;
+
+    public AllyIncantation()
+    {
+        npc = new Player();
+    }
+
     public  boolean checkDiscardCondition()
     {
         return (chips == 0);
     }
+
+    public Player getNpc()
+    {
+        return npc;
+    }
+
 }

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public abstract class Incantation
 {
     public enum sphere {SOUL, MIND, QUANTUM, BIO, FORCES, MATTER,META};
-    public enum castZone {ATTACK, DEFENSE, ENHANCEMENT,CURSE};
+    public enum castZone {ATTACK, DEFENSE, ENHANCEMENT,CURSE,ALLY};
     public enum targets {SINGLE, AREA, GLOBAL};
     protected sphere spellSphere;
     protected  String title;

@@ -20,13 +20,13 @@ import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 
 
-public class IncantationFactory
+public class CardFactory
 {
     private ConnectionSource connectionSource;
     private boolean tableCreated = false;
     private IncantationDao incDao;
 
-    public IncantationFactory()
+    public CardFactory()
     {
         // set up any connection information to the data source for the cards.
         //nothing needed using gson library.
@@ -54,6 +54,7 @@ public class IncantationFactory
             if (!tableCreated)
             {
                 incDao.createIfNotExist();
+                tableCreated = true;
             }
             temp = incDao.getIncantationDO(cardNumber);
             if (temp != null)
@@ -89,8 +90,6 @@ public class IncantationFactory
                  // connectionSource.close();
             }
         }
-
-        System.out.println(source);
         if (source.getCoreeffect().equals("Attack"))
         {
             ret = new AttackIncantation();
@@ -118,7 +117,7 @@ public class IncantationFactory
         } else if (source.getCoreeffect().equals("Ally"))
         {
             ret = new AllyIncantation();
-            ret.zone = Incantation.castZone.DEFENSE;
+            ret.zone = Incantation.castZone.ALLY;
         }
         ret.title = source.getCardname().getValue();
         ret.fluency = Integer.valueOf(source.getFluency()).intValue();
@@ -145,7 +144,7 @@ public class IncantationFactory
         {
             ret.spellSphere = Incantation.sphere.MATTER;
         }
-
+        parseAspect(source,ret);
         // parse the rules and build the card list
         // do a bunch of crap here...
 /*
@@ -200,10 +199,22 @@ public class IncantationFactory
 
                     } else if (boost.getName().equals("Curse"))
                     {
-
+                        incant.setZone(Incantation.castZone.CURSE);
                     } else if (boost.getName().equals("Curse Duration"))
                     {
-                        incant.setChips(Integer.valueOf(boost.getValue()).intValue());
+                        if (boost.getValue().equals("P") || boost.getValue().equals("X") )
+                        {
+                            incant.setChips(-1);
+                        } else if (boost.getValue().equals("F"))
+                        {
+                            incant.setChips(-1);
+                            incant.setRequiresFocus(true);
+                        }
+                        else
+                        {
+                            incant.setChips(Integer.valueOf(boost.getValue()).intValue());
+                        }
+                        incant.setZone(Incantation.castZone.CURSE);
                     } else if (boost.getName().equals("Dampen Harmony"))
                     {
 
@@ -224,13 +235,27 @@ public class IncantationFactory
 
                     } else if (boost.getName().equals("Durability"))
                     {
-                        incant.setChips(Integer.valueOf(boost.getValue()).intValue());
+
+                        if(boost.getValue().equals( "X"))
+                        {
+                            //special rules need to do more research
+                            incant.setChips(-1);
+                        }
+                        else
+                        {
+                            incant.setChips(Integer.valueOf(boost.getValue()).intValue());
+                        }
                     } else if (boost.getName().equals("Duration"))
                     {
-                        if (boost.getValue().equals("P"))
+                        if (boost.getValue().equals("P") || boost.getValue().equals("X"))
                         {
                             incant.setChips(-1);
-                        } else
+                        } else if (boost.getValue().equals("F"))
+                        {
+                            incant.setChips(-1);
+                            incant.setRequiresFocus(true);
+                        }
+                        else
                         {
                             incant.setChips(Integer.valueOf(boost.getValue()).intValue());
                         }
@@ -369,5 +394,137 @@ public class IncantationFactory
     private void parseRules(IncantationDO spell)
     {
 
+    }
+
+
+    public Artifact getArtifact(int cardNumber) throws JsonSyntaxException, MalformedURLException, IOException
+    {
+        Artifact ret = null;
+        IncantationDO source = null;
+        IncantationDODB temp = null;
+        Gson gson = new Gson();
+        String databaseURI = "jdbc:h2:tcp://localhost/~/encounter;USER=sa";
+        //make call to http://www.becomemagi.com/arcanum/getCard.php?p=[cardnumber]
+        // depending on the type create a new one of that type from the supplied jason.
+
+        // try and read local copy. if id does not exist then pull from becomemagi.com and add to local db.
+        try
+        {
+            connectionSource =
+                    new JdbcConnectionSource(databaseURI);
+
+            // set up Dao and try to get the card from the database.
+            incDao = new IncantationDao(connectionSource);
+            if (!tableCreated)
+            {
+                incDao.createIfNotExist();
+                tableCreated = true;
+            }
+            temp = incDao.getIncantationDO(cardNumber);
+            if (temp != null)
+            {
+                Date now = new Date();
+
+                source = gson.fromJson(temp.getFlat(), IncantationDO.class);
+            }
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+
+        if (source == null)
+        {
+            String url = "http://www.becomemagi.com/arcanum/getCard.php?p=" + cardNumber;
+            source = gson.fromJson(IOUtils.toString(new URL(url)), IncantationDO.class);
+            temp = new IncantationDODB();
+            temp.setFlat(gson.toJson(source).toString());
+            temp.setPrintid(source.getPrintid());
+            temp.setLastUpdate(new java.util.Date());
+            try
+            {
+                if (source.getCoreeffect() != null)
+                {
+                    incDao.getIncDao().create(temp);
+                }
+            } catch (SQLException e)
+            {
+                e.printStackTrace();
+            } finally
+            {
+                // connectionSource.close();
+            }
+        }
+
+        ret.setBackFlavor(source.getBackflavor());
+        ret.setTitle(source.getCardname().getValue());
+        ret.setRules(source.getRules());
+        ret.setFrontFlavor(source.getFrontflavor());
+
+        return ret;
+    }
+    public Specialization getSpecialization(int cardNumber) throws JsonSyntaxException, MalformedURLException, IOException
+    {
+        Specialization ret = null;
+        IncantationDO source = null;
+        IncantationDODB temp = null;
+        Gson gson = new Gson();
+        String databaseURI = "jdbc:h2:tcp://localhost/~/encounter;USER=sa";
+        //make call to http://www.becomemagi.com/arcanum/getCard.php?p=[cardnumber]
+        // depending on the type create a new one of that type from the supplied jason.
+
+        // try and read local copy. if id does not exist then pull from becomemagi.com and add to local db.
+        try
+        {
+            connectionSource =
+                    new JdbcConnectionSource(databaseURI);
+
+            // set up Dao and try to get the card from the database.
+            incDao = new IncantationDao(connectionSource);
+            if (!tableCreated)
+            {
+                incDao.createIfNotExist();
+                tableCreated = true;
+            }
+            temp = incDao.getIncantationDO(cardNumber);
+            if (temp != null)
+            {
+                Date now = new Date();
+
+                source = gson.fromJson(temp.getFlat(), IncantationDO.class);
+            }
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+
+        if (source == null)
+        {
+            String url = "http://www.becomemagi.com/arcanum/getCard.php?p=" + cardNumber;
+            source = gson.fromJson(IOUtils.toString(new URL(url)), IncantationDO.class);
+            temp = new IncantationDODB();
+            temp.setFlat(gson.toJson(source).toString());
+            temp.setPrintid(source.getPrintid());
+            temp.setLastUpdate(new java.util.Date());
+            try
+            {
+                if (source.getCoreeffect() != null)
+                {
+                    incDao.getIncDao().create(temp);
+                }
+            } catch (SQLException e)
+            {
+                e.printStackTrace();
+            } finally
+            {
+                // connectionSource.close();
+            }
+        }
+        ret = new Specialization();
+        ret.setBackFlavor(source.getBackflavor());
+        ret.setTitle(source.getCardname().getValue());
+        ret.setRules(source.getRules());
+        ret.setFrontFlavor(source.getFrontflavor());
+
+        return ret;
     }
 }
