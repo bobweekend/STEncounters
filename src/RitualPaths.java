@@ -1,17 +1,20 @@
 import java.util.List;
-import com.j256.ormlite.table.DatabaseTable;
-import com.j256.ormlite.field.DatabaseField;
 
-@DatabaseTable(tableName ="ritualpaths")
+
+
 public class RitualPaths{
     public RitualPaths()
     {
     }
-    @DatabaseField(generatedId = true)
+
     private int id;
+
     private NameValue rit1;
+
     private NameValue rit2;
+
     private NameValue rit3;
+
     private NameValue rit4;
 
     public NameValue getRit1()

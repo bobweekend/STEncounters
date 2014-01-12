@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.ListIterator;
 
+import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.jdbc.JdbcConnectionSource;
 import com.j256.ormlite.support.ConnectionSource;
 import org.apache.commons.io.IOUtils;
@@ -20,8 +21,8 @@ import com.google.gson.JsonSyntaxException;
 
 public class IncantationFactory
 {
-    private ConnectionSource connectionSource;
-
+   private ConnectionSource connectionSource;
+    private IncantationDao incDao;
     public IncantationFactory()
     {
         // set up any connection information to the data source for the cards.
@@ -29,10 +30,13 @@ public class IncantationFactory
         // set up connection source. don't want to do this here
     }
 
-    public Incantation getIncantation(int cardNumber) throws JsonSyntaxException, MalformedURLException, IOException, SQLException
+    public Incantation getIncantation(int cardNumber) throws JsonSyntaxException, MalformedURLException, IOException
     {
         Incantation ret = null;
         IncantationDO source = null;
+        IncantationDODB temp = null;
+        Gson gson = new Gson();
+        String databaseURI ="jdbc:h2:tcp://localhost/~/encounter;USER=sa";
         //make call to http://www.becomemagi.com/arcanum/getCard.php?p=[cardnumber]
         // depending on the type create a new one of that type from the supplied jason.
 
@@ -40,17 +44,29 @@ public class IncantationFactory
         try
         {
             connectionSource =
-                    new JdbcConnectionSource("jdbc:h2:~/encounter");
+                    new JdbcConnectionSource(databaseURI);
 
             // set up Dao and try to get the card from the database.
-            //if fail...
+            incDao = new IncantationDao(connectionSource);
+            incDao.createIfNotExist();
+            temp = incDao.getIncantationDO(cardNumber);
+            if(temp != null)
+            {
+               source =  gson.fromJson(temp.getFlat(), IncantationDO.class);
+                System.out.println("\n\n\n Got it locally\n\n\n");
+            }
 
             if(source == null)
             {
                 String url = "http://www.becomemagi.com/arcanum/getCard.php?p=" + cardNumber;
-                Gson gson = new Gson();
+                System.out.println("before json");
 
                 source = gson.fromJson(IOUtils.toString(new URL(url)), IncantationDO.class);
+                System.out.println("breakppoint\n" +source.toString() + "\nas json\n" +gson.toJson(source).toString() );
+                temp = new IncantationDODB();
+                temp.setFlat(gson.toJson(source).toString());
+                temp.setPrintid(source.getPrintid());
+                incDao.getIncDao().create(temp);
             }
             System.out.println(source);
             if (source.getCoreeffect().equals("Attack"))
@@ -118,10 +134,11 @@ public class IncantationFactory
  */
         } catch (SQLException e)
         {
-            e.printStackTrace();
-        } finally
+           e.printStackTrace();
+        }
+    finally
         {
-            connectionSource.close();
+          //  connectionSource.close();
         }
         return ret;
     }
@@ -133,7 +150,7 @@ public class IncantationFactory
             if (spell.getAspect().getBoost() != null)
             {
                 NameValue boost;
-                List myBoost = (List) spell.getAspect().getBoost();
+                List myBoost =  spell.getAspect().getBoost();
                 ListIterator<NameValue> list = myBoost.listIterator();
                 while (list.hasNext())
                 {
