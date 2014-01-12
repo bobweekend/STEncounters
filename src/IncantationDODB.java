@@ -4,6 +4,7 @@ import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -21,8 +22,20 @@ public class IncantationDODB
 
     @DatabaseField(id = true)
     private String printid;
+    @DatabaseField
+    private Date lastUpdate;
     @DatabaseField(dataType = DataType.LONG_STRING)
     private String flat;
+
+    public Date getLastUpdate()
+    {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(Date lastUpdate)
+    {
+        this.lastUpdate = lastUpdate;
+    }
 
     public String getPrintid()
     {

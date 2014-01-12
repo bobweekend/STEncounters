@@ -14,7 +14,7 @@ public class TestDriver {
         Incantation I;
 
             System.out.println(d.toString());
-            for(int j = 1;j<4;j++)
+            for(int j = 1;j<600;j++)
             {
               I = incantFact.getIncantation(j);
                 System.out.println("Card Number = " + j);

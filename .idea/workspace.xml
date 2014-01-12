@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54071ef8-375a-4241-a4c0-3195ddfd72b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IncantationDODB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IncantationDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Aspect.java" afterPath="$PROJECT_DIR$/src/Aspect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cardname.java" afterPath="$PROJECT_DIR$/src/Cardname.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IncantationDO.java" afterPath="$PROJECT_DIR$/src/IncantationDO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IncantationDODB.java" afterPath="$PROJECT_DIR$/src/IncantationDODB.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IncantationFactory.java" afterPath="$PROJECT_DIR$/src/IncantationFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NameValue.java" afterPath="$PROJECT_DIR$/src/NameValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RitualPaths.java" afterPath="$PROJECT_DIR$/src/RitualPaths.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestDriver.java" afterPath="$PROJECT_DIR$/src/TestDriver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -135,17 +129,21 @@
       <file leaf-file-name="IncantationDODB.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IncantationDODB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="25" selection-start="662" selection-end="669" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="884">
+            <state line="37" column="5" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="1105">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#703#704#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#726#727#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#794#795#0" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#882#883#0" expanded="true" />
+                <element signature="e#917#918#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#988#989#0" expanded="true" />
+                <element signature="e#1020#1021#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,7 +152,7 @@
       <file leaf-file-name="IncantationFactory.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/IncantationFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6188">
+            <state line="49" column="58" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.18299446" vertical-offset="734" max-vertical-offset="6443">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -248,18 +246,18 @@
         <option value="$PROJECT_DIR$/src/RitualPaths.java" />
         <option value="$PROJECT_DIR$/src/Cardname.java" />
         <option value="$PROJECT_DIR$/src/Aspect.java" />
-        <option value="$PROJECT_DIR$/src/IncantationDODB.java" />
         <option value="$PROJECT_DIR$/src/NameValue.java" />
         <option value="$PROJECT_DIR$/src/IncantationDO.java" />
         <option value="$PROJECT_DIR$/src/IncantationDao.java" />
-        <option value="$PROJECT_DIR$/src/IncantationFactory.java" />
         <option value="$PROJECT_DIR$/src/TestDriver.java" />
+        <option value="$PROJECT_DIR$/src/IncantationDODB.java" />
+        <option value="$PROJECT_DIR$/src/IncantationFactory.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="469" />
-    <option name="y" value="14" />
+    <option name="y" value="9" />
     <option name="width" value="1214" />
     <option name="height" value="985" />
   </component>
@@ -608,11 +606,15 @@
       <created>1389471148294</created>
       <updated>1389471148294</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding H2 database for local caching of cards&#10;">
+      <created>1389489166928</created>
+      <updated>1389489166928</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="469" y="14" width="1214" height="985" extended-state="0" />
+    <frame x="469" y="9" width="1214" height="985" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1222,23 +1224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IncantationDODB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="25" selection-start="662" selection-end="669" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="884">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IncantationDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="5" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="935">
@@ -1261,14 +1246,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="409" selection-end="409" vertical-scroll-proportion="0.43807763" vertical-offset="1" max-vertical-offset="680">
+        <state line="10" column="28" selection-start="267" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IncantationDODB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="5" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="1105">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IncantationFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6188">
+        <state line="49" column="58" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.18299446" vertical-offset="734" max-vertical-offset="6443">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
