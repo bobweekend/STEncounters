@@ -10,6 +10,11 @@ public class AllyIncantation extends Incantation
         npc = new Player();
     }
 
+    public  void initialize()
+    {
+
+    }
+
     public  boolean checkDiscardCondition()
     {
         return (chips == 0);

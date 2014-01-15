@@ -14,6 +14,10 @@ public class AbjurationIncantation extends Incantation
     {
        return target.checkDiscardCondition();
     }
+    public  void initialize()
+    {
+
+    }
 
     public castZone getZone()
     {

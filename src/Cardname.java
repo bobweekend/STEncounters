@@ -1,7 +1,5 @@
 
 
-import java.util.List;
-
  class Cardname{
 
     private int id;

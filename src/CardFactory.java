@@ -11,7 +11,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.ListIterator;
 
-import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.jdbc.JdbcConnectionSource;
 import com.j256.ormlite.support.ConnectionSource;
 import org.apache.commons.io.IOUtils;
@@ -33,7 +32,7 @@ public class CardFactory
         // set up connection source. don't want to do this here
     }
 
-    public Incantation getIncantation(int cardNumber) throws JsonSyntaxException, MalformedURLException, IOException
+    public Incantation getIncantation(int cardNumber) throws JsonSyntaxException, IOException
     {
         Incantation ret = null;
         IncantationDO source = null;
@@ -73,7 +72,7 @@ public class CardFactory
             String url = "http://www.becomemagi.com/arcanum/getCard.php?p=" + cardNumber;
             source = gson.fromJson(IOUtils.toString(new URL(url)), IncantationDO.class);
             temp = new IncantationDODB();
-            temp.setFlat(gson.toJson(source).toString());
+            temp.setFlat(gson.toJson(source));
             temp.setPrintid(source.getPrintid());
             temp.setLastUpdate(new java.util.Date());
             try
@@ -87,7 +86,7 @@ public class CardFactory
                 e.printStackTrace();
             } finally
             {
-                 // connectionSource.close();
+                // connectionSource.close();
             }
         }
         if (source.getCoreeffect().equals("Attack"))
@@ -119,41 +118,46 @@ public class CardFactory
             ret = new AllyIncantation();
             ret.zone = Incantation.castZone.ALLY;
         }
-        ret.title = source.getCardname().getValue();
-        ret.fluency = Integer.valueOf(source.getFluency()).intValue();
-        ret.castPhrase = source.getCastphraseST();
-        ret.harmonyCost = Integer.valueOf(source.getHarmonyCost()).intValue();
-        ret.resonanceCost = Integer.valueOf(source.getResonanceCost()).intValue();
+        if (ret != null)
+        {
+            ret.raw = source;
+            ret.title = source.getCardname().getValue();
 
-        if (source.getSpherename().equals("Mind"))
-        {
-            ret.spellSphere = Incantation.sphere.MIND;
-        } else if (source.getSpherename().equals("Soul"))
-        {
-            ret.spellSphere = Incantation.sphere.SOUL;
-        } else if (source.getSpherename().equals("Quantum"))
-        {
-            ret.spellSphere = Incantation.sphere.QUANTUM;
-        } else if (source.getSpherename().equals("Bio"))
-        {
-            ret.spellSphere = Incantation.sphere.BIO;
-        } else if (source.getSpherename().equals("Forces"))
-        {
-            ret.spellSphere = Incantation.sphere.FORCES;
-        } else if (source.getSpherename().equals("Matter"))
-        {
-            ret.spellSphere = Incantation.sphere.MATTER;
-        }
-        parseAspect(source,ret);
-        // parse the rules and build the card list
-        // do a bunch of crap here...
+            ret.fluency = Integer.valueOf(source.getFluency());
+            ret.castPhrase = source.getCastphraseST();
+            ret.harmonyCost = Integer.valueOf(source.getHarmonyCost());
+            ret.resonanceCost = Integer.valueOf(source.getResonanceCost());
+
+            if (source.getSpherename().equals("Mind"))
+            {
+                ret.spellSphere = Incantation.sphere.MIND;
+            } else if (source.getSpherename().equals("Soul"))
+            {
+                ret.spellSphere = Incantation.sphere.SOUL;
+            } else if (source.getSpherename().equals("Quantum"))
+            {
+                ret.spellSphere = Incantation.sphere.QUANTUM;
+            } else if (source.getSpherename().equals("Bio"))
+            {
+                ret.spellSphere = Incantation.sphere.BIO;
+            } else if (source.getSpherename().equals("Forces"))
+            {
+                ret.spellSphere = Incantation.sphere.FORCES;
+            } else if (source.getSpherename().equals("Matter"))
+            {
+                ret.spellSphere = Incantation.sphere.MATTER;
+            }
+            ret.initialize();
+            parseAspect(source, ret);
+            // parse the rules and build the card list
+            // do a bunch of crap here...
 /*
 *  activateRequires;
    activateDiscard;
    sustainRequires;
    sustainDiscard;
  */
-
+        }
         return ret;
     }
 
@@ -164,11 +168,10 @@ public class CardFactory
             if (spell.getAspect().getBoost() != null)
             {
                 NameValue boost;
-                List myBoost = spell.getAspect().getBoost();
-                ListIterator<NameValue> list = myBoost.listIterator();
-                while (list.hasNext())
+                List<NameValue> myBoost = spell.getAspect().getBoost();
+                for (NameValue aMyBoost : myBoost)
                 {
-                    boost = list.next();
+                    boost = aMyBoost;
 //Big if elseif ...
                     if (boost.getName().equals("Adamant"))
                     {
@@ -202,17 +205,16 @@ public class CardFactory
                         incant.setZone(Incantation.castZone.CURSE);
                     } else if (boost.getName().equals("Curse Duration"))
                     {
-                        if (boost.getValue().equals("P") || boost.getValue().equals("X") )
+                        if (boost.getValue().equals("P") || boost.getValue().equals("X"))
                         {
                             incant.setChips(-1);
                         } else if (boost.getValue().equals("F"))
                         {
                             incant.setChips(-1);
                             incant.setRequiresFocus(true);
-                        }
-                        else
+                        } else
                         {
-                            incant.setChips(Integer.valueOf(boost.getValue()).intValue());
+                            incant.setChips(Integer.valueOf(boost.getValue()));
                         }
                         incant.setZone(Incantation.castZone.CURSE);
                     } else if (boost.getName().equals("Dampen Harmony"))
@@ -236,28 +238,32 @@ public class CardFactory
                     } else if (boost.getName().equals("Durability"))
                     {
 
-                        if(boost.getValue().equals( "X"))
+                        if (boost.getValue().equals("X"))
                         {
                             //special rules need to do more research
-                            incant.setChips(-1);
-                        }
-                        else
+                            incant.setChips(-2);
+                        } else
                         {
-                            incant.setChips(Integer.valueOf(boost.getValue()).intValue());
+                            incant.setChips(Integer.valueOf(boost.getValue()));
                         }
                     } else if (boost.getName().equals("Duration"))
                     {
-                        if (boost.getValue().equals("P") || boost.getValue().equals("X"))
+                        if (boost.getValue().equals("P") )
                         {
                             incant.setChips(-1);
-                        } else if (boost.getValue().equals("F"))
+                        }
+                        else if (boost.getValue().equals("F"))
                         {
                             incant.setChips(-1);
                             incant.setRequiresFocus(true);
                         }
+                        else if( boost.getValue().equals("X"))
+                        {
+                            incant.setChips(-2);
+                        }
                         else
                         {
-                            incant.setChips(Integer.valueOf(boost.getValue()).intValue());
+                            incant.setChips(Integer.valueOf(boost.getValue()));
                         }
 
                     } else if (boost.getName().equals("Eloquent"))
@@ -397,7 +403,7 @@ public class CardFactory
     }
 
 
-    public Artifact getArtifact(int cardNumber) throws JsonSyntaxException, MalformedURLException, IOException
+    public Artifact getArtifact(int cardNumber) throws JsonSyntaxException, IOException
     {
         Artifact ret = null;
         IncantationDO source = null;
@@ -437,7 +443,7 @@ public class CardFactory
             String url = "http://www.becomemagi.com/arcanum/getCard.php?p=" + cardNumber;
             source = gson.fromJson(IOUtils.toString(new URL(url)), IncantationDO.class);
             temp = new IncantationDODB();
-            temp.setFlat(gson.toJson(source).toString());
+            temp.setFlat(gson.toJson(source));
             temp.setPrintid(source.getPrintid());
             temp.setLastUpdate(new java.util.Date());
             try
@@ -454,7 +460,7 @@ public class CardFactory
                 // connectionSource.close();
             }
         }
-
+        ret = new Artifact();
         ret.setBackFlavor(source.getBackflavor());
         ret.setTitle(source.getCardname().getValue());
         ret.setRules(source.getRules());
@@ -462,7 +468,8 @@ public class CardFactory
 
         return ret;
     }
-    public Specialization getSpecialization(int cardNumber) throws JsonSyntaxException, MalformedURLException, IOException
+
+    public Specialization getSpecialization(int cardNumber) throws JsonSyntaxException, IOException
     {
         Specialization ret = null;
         IncantationDO source = null;
@@ -502,7 +509,7 @@ public class CardFactory
             String url = "http://www.becomemagi.com/arcanum/getCard.php?p=" + cardNumber;
             source = gson.fromJson(IOUtils.toString(new URL(url)), IncantationDO.class);
             temp = new IncantationDODB();
-            temp.setFlat(gson.toJson(source).toString());
+            temp.setFlat(gson.toJson(source));
             temp.setPrintid(source.getPrintid());
             temp.setLastUpdate(new java.util.Date());
             try

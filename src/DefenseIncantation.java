@@ -7,4 +7,9 @@ public class DefenseIncantation extends Incantation
     {
         return (chips == 0);
     }
+    // examime the raw data for additional stuff.
+    public  void initialize()
+    {
+
+    }
 }

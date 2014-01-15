@@ -7,4 +7,8 @@ public class AttackIncantation extends Incantation
     {
         return (chips == 0);
     }
+    public  void initialize()
+    {
+
+    }
 }

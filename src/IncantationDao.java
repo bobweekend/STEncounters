@@ -10,7 +10,7 @@ import java.sql.SQLException;
  */
 public class IncantationDao
 {
-    private ConnectionSource connectionSource;
+    private final ConnectionSource connectionSource;
     private Dao<IncantationDODB, String> incDao;
 
 

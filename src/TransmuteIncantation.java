@@ -13,6 +13,10 @@ public class TransmuteIncantation extends Incantation
     {
         return target.checkDiscardCondition();
     }
+    public  void initialize()
+    {
+
+    }
     public castZone getZone()
     {
         return target.zone;

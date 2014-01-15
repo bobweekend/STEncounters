@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/CardFactory.java" line="241" />
+    <bookmark url="file://$PROJECT_DIR$/src/CardFactory.java" line="243" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54071ef8-375a-4241-a4c0-3195ddfd72b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Artifact.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Specialization.java" />
-      <change type="MOVED" beforePath="C:\Users\bobweekend\IdeaProjects\STEncounters1\src\IncantationFactory.java" afterPath="$PROJECT_DIR$/src/CardFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ConsoleEncounter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LesserSentientShadow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AbjurationIncantation.java" afterPath="$PROJECT_DIR$/src/AbjurationIncantation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllyIncantation.java" afterPath="$PROJECT_DIR$/src/AllyIncantation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Aspect.java" afterPath="$PROJECT_DIR$/src/Aspect.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AttackIncantation.java" afterPath="$PROJECT_DIR$/src/AttackIncantation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CardFactory.java" afterPath="$PROJECT_DIR$/src/CardFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cardname.java" afterPath="$PROJECT_DIR$/src/Cardname.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DefenseIncantation.java" afterPath="$PROJECT_DIR$/src/DefenseIncantation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Encounter.java" afterPath="$PROJECT_DIR$/src/Encounter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EnhancementIncantation.java" afterPath="$PROJECT_DIR$/src/EnhancementIncantation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GM.java" afterPath="$PROJECT_DIR$/src/GM.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Incantation.java" afterPath="$PROJECT_DIR$/src/Incantation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IncantationDODB.java" afterPath="$PROJECT_DIR$/src/IncantationDODB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IncantationDao.java" afterPath="$PROJECT_DIR$/src/IncantationDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NameValue.java" afterPath="$PROJECT_DIR$/src/NameValue.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Player.java" afterPath="$PROJECT_DIR$/src/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TestDriver.java" afterPath="$PROJECT_DIR$/src/TestDriver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RitualPaths.java" afterPath="$PROJECT_DIR$/src/RitualPaths.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TransmuteIncantation.java" afterPath="$PROJECT_DIR$/src/TransmuteIncantation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="STEncounters.iws" />
@@ -79,70 +91,26 @@
       <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="41" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="4454">
-              <folding />
+            <state line="23" column="43" selection-start="631" selection-end="637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4573">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1964#1965#0" expanded="true" />
+                <element signature="e#1991#1992#0" expanded="true" />
+                <element signature="e#2043#2044#0" expanded="true" />
+                <element signature="e#2075#2076#0" expanded="true" />
+                <element signature="e#2111#2112#0" expanded="true" />
+                <element signature="e#2137#2138#0" expanded="true" />
+                <element signature="e#2181#2182#0" expanded="true" />
+                <element signature="e#2211#2212#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Artifact.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Artifact.java">
+      <file leaf-file-name="GM.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="21" selection-start="58" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Specialization.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Specialization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="27" selection-start="58" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Encounter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Encounter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestDriver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TestDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="43" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="782">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbjurationIncantation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AbjurationIncantation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="31" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="476">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllyIncantation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AllyIncantation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="27" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="493">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardFactory.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CardFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="237" column="0" selection-start="8420" selection-end="8420" vertical-scroll-proportion="7.6596956" vertical-offset="0" max-vertical-offset="9112">
+            <state line="19" column="0" selection-start="284" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -151,10 +119,69 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AttackIncantation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AttackIncantation.java">
+      <file leaf-file-name="IncantationDODB.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/IncantationDODB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
+            <state line="13" column="13" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1071">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RitualPaths.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RitualPaths.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsoleEncounter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ConsoleEncounter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="17" selection-start="808" selection-end="808" vertical-scroll-proportion="0.6938776" vertical-offset="0" max-vertical-offset="969">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LesserSentientShadow.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LesserSentientShadow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="35" selection-start="1607" selection-end="1638" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="3332">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Incantation.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Incantation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="163" column="5" selection-start="3857" selection-end="3857" vertical-scroll-proportion="0.0" vertical-offset="1191" max-vertical-offset="1785">
+              <folding>
+                <element signature="e#3822#3823#0" expanded="true" />
+                <element signature="e#3856#3857#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cardname.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cardname.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllyIncantation.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AllyIncantation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
               <folding />
             </state>
           </provider>
@@ -163,7 +190,7 @@
       <file leaf-file-name="IncantationDao.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IncantationDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="5" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="935">
+            <state line="12" column="4" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
@@ -183,13 +210,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/AttackIncantation.java" />
         <option value="$PROJECT_DIR$/src/ComponentIncantation.java" />
-        <option value="$PROJECT_DIR$/src/DefenseIncantation.java" />
         <option value="$PROJECT_DIR$/src/JasonTest.java" />
         <option value="$PROJECT_DIR$/src/Albums.java" />
         <option value="$PROJECT_DIR$/src/Dataset.java" />
-        <option value="$PROJECT_DIR$/src/EnhancementIncantation.java" />
         <option value="$PROJECT_DIR$/src/CardNameDO.java" />
         <option value="$PROJECT_DIR$/src/EmpowermentsDO.java" />
         <option value="$PROJECT_DIR$/src/Boost.java" />
@@ -200,10 +224,7 @@
         <option value="$PROJECT_DIR$/src/Rit4.java" />
         <option value="$PROJECT_DIR$/src/AlllyIncantation.java" />
         <option value="$PROJECT_DIR$/src/Rit.java" />
-        <option value="$PROJECT_DIR$/src/Encounter.java" />
         <option value="$PROJECT_DIR$/src/IncantationRitDO.java" />
-        <option value="$PROJECT_DIR$/src/AbjurationIncantation.java" />
-        <option value="$PROJECT_DIR$/src/TransmuteIncantation.java" />
         <option value="$PROJECT_DIR$/src/IncantationBaseDO.java" />
         <option value="$PROJECT_DIR$/src/SalesTax.java" />
         <option value="$PROJECT_DIR$/src/salesTaxInterface.php" />
@@ -212,23 +233,31 @@
         <option value="$PROJECT_DIR$/src/AspectNameValue.java" />
         <option value="$PROJECT_DIR$/src/EmpowerNameValue.java" />
         <option value="$PROJECT_DIR$/src/RitualPathNameValue.java" />
-        <option value="$PROJECT_DIR$/src/RitualPaths.java" />
-        <option value="$PROJECT_DIR$/src/Cardname.java" />
-        <option value="$PROJECT_DIR$/src/Aspect.java" />
-        <option value="$PROJECT_DIR$/src/NameValue.java" />
         <option value="$PROJECT_DIR$/src/IncantationDO.java" />
-        <option value="$PROJECT_DIR$/src/IncantationDao.java" />
-        <option value="$PROJECT_DIR$/src/IncantationDODB.java" />
         <option value="$PROJECT_DIR$/src/PlayerComparator.java" />
-        <option value="$PROJECT_DIR$/src/GM.java" />
-        <option value="$PROJECT_DIR$/src/AllyIncantation.java" />
-        <option value="$PROJECT_DIR$/src/Incantation.java" />
         <option value="$PROJECT_DIR$/src/TestDriver.java" />
         <option value="$PROJECT_DIR$/src/IncantationFactory.java" />
-        <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/Specialization.java" />
         <option value="$PROJECT_DIR$/src/Artifact.java" />
+        <option value="$PROJECT_DIR$/src/Aspect.java" />
+        <option value="$PROJECT_DIR$/src/Cardname.java" />
+        <option value="$PROJECT_DIR$/src/IncantationDODB.java" />
+        <option value="$PROJECT_DIR$/src/NameValue.java" />
+        <option value="$PROJECT_DIR$/src/RitualPaths.java" />
+        <option value="$PROJECT_DIR$/src/IncantationDao.java" />
+        <option value="$PROJECT_DIR$/src/GM.java" />
+        <option value="$PROJECT_DIR$/src/ConsoleEncounter.java" />
+        <option value="$PROJECT_DIR$/src/Player.java" />
+        <option value="$PROJECT_DIR$/src/LesserSentientShadow.java" />
         <option value="$PROJECT_DIR$/src/CardFactory.java" />
+        <option value="$PROJECT_DIR$/src/AbjurationIncantation.java" />
+        <option value="$PROJECT_DIR$/src/AttackIncantation.java" />
+        <option value="$PROJECT_DIR$/src/DefenseIncantation.java" />
+        <option value="$PROJECT_DIR$/src/TransmuteIncantation.java" />
+        <option value="$PROJECT_DIR$/src/EnhancementIncantation.java" />
+        <option value="$PROJECT_DIR$/src/AllyIncantation.java" />
+        <option value="$PROJECT_DIR$/src/Encounter.java" />
+        <option value="$PROJECT_DIR$/src/Incantation.java" />
       </list>
     </option>
   </component>
@@ -264,6 +293,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -313,7 +343,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -595,7 +624,11 @@
       <created>1389495883805</created>
       <updated>1389495883805</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed issue with non-numeric duration/duribility. &#10;">
+      <created>1389501970102</created>
+      <updated>1389501970102</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -624,7 +657,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.029612755" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6043329" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -669,7 +702,8 @@
     <MESSAGE value="Incantations from FCN" />
     <MESSAGE value="Incantations from FCN&#10;" />
     <MESSAGE value="Adding H2 database for local caching of cards&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding H2 database for local caching of cards&#10;" />
+    <MESSAGE value="Fixed issue with non-numeric duration/duribility. &#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with non-numeric duration/duribility. &#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -679,27 +713,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/NameValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="18" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="748">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IncantationDO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="171" column="18" selection-start="4649" selection-end="4649" vertical-scroll-proportion="0.0" vertical-offset="2907" max-vertical-offset="3502">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -738,7 +756,9 @@
     <entry file="file://$PROJECT_DIR$/src/Encounter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="22" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="544">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -794,7 +814,9 @@
     <entry file="file://$PROJECT_DIR$/src/Encounter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="22" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="544">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -829,20 +851,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="170" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DefenseIncantation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EnhancementIncantation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_IncantationDO.zip/com/domain/project/IncantationDO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462" />
@@ -851,29 +859,6 @@
     <entry file="file://$PROJECT_DIR$/src/ComponentIncantation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="28" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TransmuteIncantation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cardname.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
           <folding />
         </state>
       </provider>
@@ -894,20 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NameValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.62846583" vertical-offset="0" max-vertical-offset="541">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RitualPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="33" selection-start="757" selection-end="757" vertical-scroll-proportion="0.3401109" vertical-offset="377" max-vertical-offset="918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/thirdparty/google-gson-2.2.4/gson-2.2.4-sources.jar!/com/google/gson/Gson.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="798" column="0" selection-start="34871" selection-end="34871" vertical-scroll-proportion="0.296846" vertical-offset="12556" max-vertical-offset="14637">
@@ -925,36 +896,6 @@
         <state line="451" column="0" selection-start="15831" selection-end="15831" vertical-scroll-proportion="0.296846" vertical-offset="7184" max-vertical-offset="26214" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IncantationDODB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="5" selection-start="727" selection-end="727" vertical-scroll-proportion="0.6357143" vertical-offset="273" max-vertical-offset="1105">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="27" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.60714287" vertical-offset="663" max-vertical-offset="1309">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PlayerComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="17" selection-start="536" selection-end="536" vertical-scroll-proportion="0.57678574" vertical-offset="0" max-vertical-offset="918">
@@ -967,75 +908,12 @@
         <state line="24" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.27321428" vertical-offset="0" max-vertical-offset="560" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AttackIncantation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AbjurationIncantation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Encounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AllyIncantation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IncantationDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="43" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="41" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3893">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IncantationDO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="27" selection-start="405" selection-end="405" vertical-scroll-proportion="0.6307978" vertical-offset="0" max-vertical-offset="2108">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Incantation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="336" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Artifact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="58" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="952">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,13 +924,173 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CardFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/Artifact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="237" column="0" selection-start="8420" selection-end="8420" vertical-scroll-proportion="7.6596956" vertical-offset="0" max-vertical-offset="9112">
+        <state line="5" column="4" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.05666667" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cardname.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NameValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RitualPaths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IncantationDODB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IncantationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="43" selection-start="631" selection-end="637" vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="4556">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1964#1965#0" expanded="true" />
+            <element signature="e#1991#1992#0" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
+            <element signature="e#2075#2076#0" expanded="true" />
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2181#2182#0" expanded="true" />
+            <element signature="e#2211#2212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="284" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="42" selection-start="99" selection-end="137" vertical-scroll-proportion="0.09461967" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="29" selection-start="5361" selection-end="5361" vertical-scroll-proportion="0.7513915" vertical-offset="2128" max-vertical-offset="9231">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbjurationIncantation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="5" selection-start="330" selection-end="377" vertical-scroll-proportion="0.5046382" vertical-offset="0" max-vertical-offset="539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AttackIncantation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="226" selection-end="226" vertical-scroll-proportion="0.37847868" vertical-offset="0" max-vertical-offset="539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TransmuteIncantation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="5" selection-start="368" selection-end="368" vertical-scroll-proportion="0.47309834" vertical-offset="0" max-vertical-offset="539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EnhancementIncantation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="231" selection-end="231" vertical-scroll-proportion="0.37847868" vertical-offset="0" max-vertical-offset="539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DefenseIncantation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="5" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AllyIncantation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LesserSentientShadow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="35" selection-start="1607" selection-end="1638" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="3332">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Encounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="45" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.8200371" vertical-offset="238" max-vertical-offset="816">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Incantation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="5" selection-start="3857" selection-end="3857" vertical-scroll-proportion="0.0" vertical-offset="1191" max-vertical-offset="1785">
+          <folding>
+            <element signature="e#3822#3823#0" expanded="true" />
+            <element signature="e#3856#3857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConsoleEncounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="17" selection-start="808" selection-end="808" vertical-scroll-proportion="0.6938776" vertical-offset="0" max-vertical-offset="969">
+          <folding />
         </state>
       </provider>
     </entry>

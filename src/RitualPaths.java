@@ -1,6 +1,3 @@
-import java.util.List;
-
-
 
 public class RitualPaths{
     public RitualPaths()

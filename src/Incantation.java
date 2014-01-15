@@ -5,9 +5,9 @@ import java.util.ArrayList;
  */
 public abstract class Incantation
 {
-    public enum sphere {SOUL, MIND, QUANTUM, BIO, FORCES, MATTER,META};
-    public enum castZone {ATTACK, DEFENSE, ENHANCEMENT,CURSE,ALLY};
-    public enum targets {SINGLE, AREA, GLOBAL};
+    public enum sphere {SOUL, MIND, QUANTUM, BIO, FORCES, MATTER,META}
+    public enum castZone {ATTACK, DEFENSE, ENHANCEMENT,CURSE,ALLY}
+    public enum targets {SINGLE, AREA, GLOBAL}
     protected sphere spellSphere;
     protected  String title;
     protected int fluency;
@@ -21,7 +21,19 @@ public abstract class Incantation
     protected int chips;
     protected int harmonyCost;
     protected int resonanceCost;
+    protected int actionsUsed;
     protected  targets targ;
+    protected IncantationDO raw;
+
+    public IncantationDO getRaw()
+    {
+        return raw;
+    }
+
+    public void setRaw(IncantationDO raw)
+    {
+        this.raw = raw;
+    }
 
     public sphere getSpellSphere()
     {
@@ -49,6 +61,7 @@ public abstract class Incantation
     }
 
     public abstract boolean checkDiscardCondition();
+    public abstract void initialize();
     public targets getTargets()
     {
         return targ;
@@ -143,5 +156,10 @@ public abstract class Incantation
     public void setTarg(targets targ)
     {
         this.targ = targ;
+    }
+
+    public int getActionsUsed()
+    {
+        return actionsUsed;
     }
 }

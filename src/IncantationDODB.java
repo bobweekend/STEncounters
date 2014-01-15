@@ -3,9 +3,7 @@ import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
-import java.util.Collection;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by bobweekend on 1/3/14.

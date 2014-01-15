@@ -4,7 +4,7 @@
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
+import java.util.Random;
 
 public class GM
 {
@@ -13,10 +13,11 @@ public class GM
     private int round;
     public int resonanceRoll()
     {
+        Random  rnd = new Random();
         int d10a;
         int resonance = 0;
-        double tmp =java.lang.Math.random()* 10.0;
-        d10a = (int) tmp + 1;
+        d10a = rnd.nextInt(9)+1;
+
         switch (d10a)
         {
             case 1:
@@ -69,5 +70,6 @@ public class GM
         }
         return currentPlayer;
     }
+
 
 }

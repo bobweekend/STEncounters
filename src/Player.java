@@ -7,21 +7,25 @@ import java.util.ArrayList;
 
 public class Player
 {
-    private int number;
-    private String firstName;
-    private int resonance;
-    private int harmony;
-    private int essence;
-    private int standardActions;
-    private int freeActions;
-    private int interruptStone;
-    private int totalFocus;
-    private int usedFocus;
-    private ArrayList<Incantation> enhanceZone;
-    private ArrayList<Incantation> defenseZone;
-    private ArrayList<Incantation> attackZone;
-    private ArrayList<Incantation> curses;
-    private ArrayList<Incantation> codex;
+    protected int number;
+    protected String firstName;
+    protected int resonance;
+    protected int harmony;
+    protected int essence;
+    protected int will;
+    protected int standardActions;
+    protected int freeActions;
+    protected int interruptStone;
+    protected int totalFocus;
+    protected int usedFocus;
+    protected ArrayList<Incantation> enhanceZone;
+    protected ArrayList<Incantation> defenseZone;
+    protected ArrayList<Incantation> attackZone;
+    protected ArrayList<Incantation> curses;
+    protected ArrayList<Incantation> codex;
+    protected ArrayList<Incantation> preped;
+    protected Specialization spec;
+    protected Artifact art;
 
     public enum energy
     {
@@ -53,8 +57,6 @@ public class Player
     {
         return will;
     }
-
-    private int will;
 
     public int getNumber()
     {
@@ -93,6 +95,26 @@ public class Player
         will = 3;
         standardActions = 2;
         freeActions = 1;
+    }
+
+    public Specialization getSpec()
+    {
+        return spec;
+    }
+
+    public void setSpec(Specialization spec)
+    {
+        this.spec = spec;
+    }
+
+    public Artifact getArt()
+    {
+        return art;
+    }
+
+    public void setArt(Artifact art)
+    {
+        this.art = art;
     }
 
     public int getTotalFocus()
@@ -187,6 +209,17 @@ public class Player
         return ret;
     }
 
+    public void prep(ArrayList<Incantation> cards)
+    {
+        // could add a check to ensure a max of three cards are prepped.
+        preped = cards;
+    }
+
+    public void maintenance()
+    {
+
+    }
+
     public void essenceDamage(int amt)
     {
         essence -= amt;
@@ -200,6 +233,7 @@ public class Player
         // Enhance Zone
     }
 
+    // happens after a card is activated.
     // Negative values indicate non-card actions.
     // -1 = exchange will for resonance
     // -2 = exchange will for harmony
@@ -210,6 +244,10 @@ public class Player
     {
         int actionsUsed = 0; // 0 indicates a free action
 
+        if(cardNumber>0)
+        {
+            // check to see if card is prepped.
+        }
         return actionsUsed;
     }
 
@@ -252,5 +290,9 @@ public class Player
     {
         //curses are resolved with enhancement. They do not count toward the 4 enhancements allowed.
         curses.add(curse);
+    }
+    public void addResonance(int res)
+    {
+        resonance += res;
     }
 }
